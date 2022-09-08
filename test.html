@@ -1,0 +1,14 @@
+<tr class="table-row">
+    <td>
+        <button class="danger">
+            <i class="far fa-times-circle"></i>
+        </button>
+    </td>
+    <td name="image"><img src="${LCImg}" alt=""></td>
+    <td name="product_name"> ${LCName}
+        <input type="hidden" name="product_name[]">
+    </td>
+    <input type="hidden" name="product_name[]" value="${LCImg}${LCName},">
+    <td class="table-price" name="price">${LCPrice}</td>
+    <td><input class="table-quantity-input" name="quantity" type="number" value="${LCQuantity}"></td>
+</tr>
